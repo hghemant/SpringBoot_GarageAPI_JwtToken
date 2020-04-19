@@ -1,0 +1,20 @@
+<div class="container-products">
+    <div class="product-header">
+        <h5 class="product-title">PRODUCT</h5>
+        <h5 class="price sm-hide">MODEL</h5>
+        <h5 class="quantity">LOCATION</h5>
+        <h5 class="total">PRICE</h5>
+    </div>
+    <div class="products" *ngFor="let product of cart; let i = index">
+        <div class="product add-cart"><span (click)="removeProduct(product)" class="glyphicon glyphicon-remove"></span>
+            <img [src]='imgUrl+product?.image' />
+          <div class="sm-hide">{{product.make}}</div>
+      </div>
+      <div class="price sm-hide">{{product.model}}</div>
+      <div class="quantity">
+              <div>{{product.location}}</div> 
+             
+      </div>
+      <div class="total add-cart">{{product.price}}</div>
+    </div>
+</div>

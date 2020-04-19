@@ -1,0 +1,170 @@
+/* You can add global styles to this file, and also import other style files */
+header {
+    background-color: #deb0b0;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  header a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    border-radius: 4px;
+  }
+  
+  header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .logo {
+      width: 130px;
+      height: auto;
+  }
+  
+  header a:hover {
+    /* background-color: #ddd; */
+    color: #333;
+  }
+  .header-right {
+    float: right;
+    margin-top: 20px;
+  }
+  footer {
+    background-color: #777;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+.car-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.car-section {
+    width: 27%;
+    -webkit-border-radius: 5px;
+    -webkit-box-flex: 1;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(101,96,96,.4);
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgba(101,96,96,.4);
+    color: #656060;
+    display: block;
+    background: #f8f8f8;
+    margin: 25px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.car-details-wrapper {
+    display: block;
+    padding: 20px 20px 15px;
+}
+.car-img {
+    width: 100%;
+    height: auto;
+}
+.img:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+}
+.car-section:hover {
+    transform: scale(1.015);
+    box-shadow: 0 1px 5px 0 rgba(101,96,96,.4);
+}
+.car-make-model {
+    display: flex;
+    justify-content: space-between;
+}
+.car-make {
+    font-weight: bold;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.car-model {
+    color: #756666;
+}
+.car-name-location {
+    display: flex;
+}
+.car-name {
+    background-color: #e9e9e9;
+    border: none;
+    font-weight: 300;
+    padding: 1px 5px;
+}
+.car-location {
+    color: #9c9797;
+    margin: auto 6px;
+}
+.car-price {
+    font-size: 25px;
+}
+.car-details-heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+.car-details-section {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: 1px solid #ccc;
+    background: #f3f2ed;
+}
+.car-details-section label {
+    font-size: 14px;
+}
+.car-details-section span {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333;
+}
+.car-details-section p {
+    margin-bottom: 15px;
+}
+.car-details-section p {
+    margin-bottom: 15px;
+}
+nav a.active {
+    color: orange;
+}
+.back-button {
+    margin-top: 35px;
+    background-color: #ec971f;
+    border-color: #d58512;
+    font-weight: bold;
+}
+.back-button:hover {
+    background-color: #c3760b;
+}
+.nav-button {
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    text-align: center;
+    justify-content: center;
+}
+.nav-button button {
+    width: 100px;
+    margin-left: 50px;
+}
+.nav-button button:first-child {
+    margin-left: 0;
+}
+.selected {
+    color: #475f5f;
+    background: #c5ebef;
+    border: 1px solid #c5ebef;
+}
+.m-t-10 {
+    margin-top: 10px;
+}
+.added-to-cart {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}

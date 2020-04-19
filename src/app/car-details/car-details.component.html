@@ -1,0 +1,47 @@
+<!-- <div class="container" *ngFor="let car of carDetails"> -->
+  <div  class="container" *ngFor="let car of carDetails">
+    
+<div class="col-xs-8">
+  <img class="car-img" [src]='imgUrl+car?.image'>
+</div>
+<div class="col-xs-4 car-details-section">
+  <p class="car-details-heading">Car Details:</p>
+  <p>
+    <label class="label label-info">Make:</label>
+    <span>{{car.make}}</span>
+  </p>
+  <p>
+    <label class="label label-info">Model:</label>
+    <span>{{car?.model}}</span>
+  </p>
+  <p>
+    <label class="label label-info">Date Added:</label>
+    <span>{{car?.date_added}}</span>
+  </p>
+  <p>
+    <label class="label label-info">Price:</label>
+    <span>{{car?.price}} €</span>
+  </p>
+  <p>
+    <label class="label label-info">Year Model:</label>
+    <span>{{car?.year_model}}</span>
+  </p>
+  <p>
+    <label class="label label-info">Warehouse Name:</label>
+    <span>{{car?.name}}</span>
+  </p>
+  <p>
+    <label class="label label-info">Location:</label>
+    <span class="">{{car?.location}}</span>
+  </p>
+   <button class="btn btn-block back-button" (click)="addToCart(car)">Add to Cart</button>
+   <h4 *ngIf="isAdded" class="added-to-cart">Car has been added in your cart!!</h4>
+
+</div>
+<!-- </div> -->
+</div>
+<div class="nav-button">
+  <button class="btn btn-primary" (click)="goPrevious()">Previous Car</button>
+  <button class="btn btn-primary" (click)="goNext()">Next Car</button>
+  <!-- <button class="btn btn-block back-button" (click)="GoToCarList()">Back</button> -->
+</div>

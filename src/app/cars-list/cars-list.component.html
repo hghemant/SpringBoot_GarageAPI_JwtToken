@@ -1,0 +1,19 @@
+<div class="car-list-container">
+  <div (click)="onSelect(car)" [class.selected]="isSelected(car)" *ngFor="let car of cars" class="car-section">
+    <img [src]='imgUrl+car.image' class="car-img">
+    <div class="car-details-wrapper">
+      <div class="car-make-model">
+        <div>
+          <div class="car-make">{{car.make}}</div>
+          <p class="car-model">{{car.model}}</p>
+        </div>
+        <p class="car-price">{{car.price}} €</p>
+      </div>
+      <div class="car-name-location">
+        <div class="car-name">{{car.name}}</div>
+        <div class="car-location">{{car.location}}</div>
+      </div>
+    </div>
+  </div>
+  {{errorMsg}}
+</div>
