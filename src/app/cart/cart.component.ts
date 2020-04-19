@@ -25,21 +25,14 @@ export class CartComponent {
     alert('Sorry! Checkout will be coming soon!')
   }
 
-  getTotalPrice() {
-    let totalCost: Array<number> = []
-    let quantity: Array<number> = []
-    let intPrice: number
-    let intQuantity: number
+  getTotalQuantity() {
+      let quantity: Array<number> = []
+       let intQuantity: number
     this.cart.forEach((item, i) => {
-      intPrice = parseInt(item.price)
-      intQuantity = parseInt(item.quantity)
-      totalCost.push(intPrice)
-      quantity.push(intQuantity)
+        intQuantity = parseInt(item.quantity)
+       quantity.push(intQuantity)
     })
 
-    this.totalPrice = totalCost.reduce((acc, item) => {
-      return acc += item
-    }, 0)
     this.totalQuantity = quantity.reduce((acc, item) => {
       return acc += item
     }, 0)
@@ -48,13 +41,10 @@ export class CartComponent {
   ngOnInit() {
     this.cartSubscription = this.cartStore.getState().subscribe(res => {
       this.cart = res.products
-      this.getTotalPrice()
+      this.getTotalQuantity()
     });
   }
 
-  // ngOnDestroy() {
-  //   this.cartSubscription.unsubscribe()
-  // }
   
 }
 

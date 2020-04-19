@@ -1,6 +1,5 @@
 import { Action } from '@ngrx/store';
 import { ActionTypes } from '../actions/cart.actions';
-// import { Product } from '../../models/Product';
 
 const initialState = {
   products: []
