@@ -12,7 +12,6 @@ export class NavbarComponent implements OnInit {
 
   public cart = [];
   shoppingCount:number;
-  public totalPrice: number;
   public totalQuantity: number;
   public cartSubscription: Subscription;
   constructor(private cartStore: CartAction) { }

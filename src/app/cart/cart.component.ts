@@ -10,7 +10,6 @@ import { CartAction } from './../store/actions/cart.actions';
 export class CartComponent {
 
   public cart = [];
-  public totalPrice: number;
   public totalQuantity: number;
   public cartSubscription: Subscription;
   imgUrl = "../../assets/images/";
