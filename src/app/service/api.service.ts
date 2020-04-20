@@ -13,28 +13,27 @@ export class ApiService {
     public token;
     constructor(private http: HttpClient) { }
 
+    //Service to reterive the car based on Id.
     getCarDetails(id) {
         let tokenStr = 'Bearer ' + this.token;
         const headers = new HttpHeaders().set("Authorization", tokenStr)
-        console.log('URL', "http://localhost:8080/getallcar/"+id);
         return this.http.get("http://localhost:8080/getallcar/"+id, { headers, responseType: 'text' as 'json' });
     }
 
-    /** Hemant gupta  */
 
-    public genrateToken(request) {
+    //Genrate  the Token to Authenticate the user(Frank)
+        public genrateToken(request) {
         return this.http.post("http://localhost:8080/authenticate", request, { responseType: 'text' as 'json' });
     }
 
 
+    //Function to get all the Cars.
     public carlist() {
         console.log('service token ', this.token);
         let tokenStr = 'Bearer ' + this.token;
         const headers = new HttpHeaders().set("Authorization", tokenStr)
         return this.http.get("http://localhost:8080/getallcar", { headers, responseType: 'text' as 'json' })
     }
-
-
     errorHandler(error: HttpErrorResponse) {
         return throwError(error.message || "Server Error");
     }

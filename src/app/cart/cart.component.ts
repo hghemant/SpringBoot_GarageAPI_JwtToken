@@ -23,7 +23,7 @@ export class CartComponent {
   checkout() {
     alert('Sorry! Checkout will be coming soon!')
   }
-
+// Function to get the Quantity of selected cars in carts
   getTotalQuantity() {
       let quantity: Array<number> = []
        let intQuantity: number

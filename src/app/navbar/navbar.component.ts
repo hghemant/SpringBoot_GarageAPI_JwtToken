@@ -23,6 +23,7 @@ export class NavbarComponent implements OnInit {
     });
   }
 
+  //function to get the Quantity of selected cars
   getTotalQuantity() {
       let quantity: Array<number> = []
      let intQuantity: number

@@ -25,6 +25,8 @@ export class CarsListComponent implements OnInit {
     this.accessAPI()
   }
 
+  // Function to get all cars
+
    public accessAPI(){
      console.log(this._service.token);     
     let resp=this._service.carlist();
