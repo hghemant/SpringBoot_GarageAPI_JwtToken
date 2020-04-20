@@ -1,3 +1,7 @@
+# Garage_Architecture and design.pptx
+
+Added one high level archutecure and design in PPT(Garage_Architecture and design.pptx)
+
 # AngularGarage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
