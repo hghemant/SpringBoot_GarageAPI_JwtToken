@@ -168,3 +168,15 @@ nav a.active {
     font-weight: bold;
     text-align: center;
 }
+table {
+    width: 100%;
+}
+td, th {
+    border: 1px solid #b39e9e;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

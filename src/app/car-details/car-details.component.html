@@ -6,34 +6,36 @@
 </div>
 <div class="col-xs-4 car-details-section">
   <p class="car-details-heading">Car Details:</p>
-  <p>
-    <label class="label label-info">Make:</label>
-    <span>{{car.make}}</span>
-  </p>
-  <p>
-    <label class="label label-info">Model:</label>
-    <span>{{car?.model}}</span>
-  </p>
-  <p>
-    <label class="label label-info">Date Added:</label>
-    <span>{{car?.date_added}}</span>
-  </p>
-  <p>
-    <label class="label label-info">Price:</label>
-    <span>{{car?.price}} €</span>
-  </p>
-  <p>
-    <label class="label label-info">Year Model:</label>
-    <span>{{car?.year_model}}</span>
-  </p>
-  <p>
-    <label class="label label-info">Warehouse Name:</label>
-    <span>{{car?.name}}</span>
-  </p>
-  <p>
-    <label class="label label-info">Location:</label>
-    <span class="">{{car?.location}}</span>
-  </p>
+  <table>
+    <tr>
+      <td class="td td-info">Make:</td>
+      <td>{{car.make}}</td>
+    </tr>
+    <tr>
+      <td class="td td-info">Model:</td>
+      <td>{{car.model}}</td>
+    </tr>
+    <tr>
+      <td class="td td-info">Date Added:</td>
+      <td>{{car.date_added}}</td>
+    </tr>
+    <tr>
+      <td class="td td-info">Price:</td>
+      <td>{{car.price}} €</td>
+    </tr>
+    <tr>
+      <td class="td td-info">Year Model:</td>
+      <td>{{car.year_model}}</td>
+    </tr>
+    <tr>
+        <td class="td td-info">Warehouse Name:</td>
+        <td>{{car.name}}</td>
+      </tr>
+    <tr>
+      <td class="td td-info">Location:</td>
+      <td class="">{{car.location}}</td>
+    </tr>
+  </table>
    <button class="btn btn-block back-button" (click)="addToCart(car)">Add to Cart</button>
    <h4 *ngIf="isAdded" class="added-to-cart">Car has been added in your cart!!</h4>
 
