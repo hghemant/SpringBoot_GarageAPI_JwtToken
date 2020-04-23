@@ -23,25 +23,11 @@ export class CartComponent {
   checkout() {
     alert('Sorry! Checkout will be coming soon!')
   }
-// Function to get the Quantity of selected cars in carts
-  getTotalQuantity() {
-      let quantity: Array<number> = []
-       let intQuantity: number
-    this.cart.forEach((item, i) => {
-        intQuantity = parseInt(item.quantity)
-       quantity.push(intQuantity)
-    })
-
-    this.totalQuantity = quantity.reduce((acc, item) => {
-      return acc += item
-    }, 0)
-  }
 
   ngOnInit() {
     this.cartSubscription = this.cartStore.getState().subscribe(res => {
       this.cart = res.products
-      this.getTotalQuantity()
-    });
+     });
   }
 
   
